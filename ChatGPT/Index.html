@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="icon" href="logo1.png" sizes="16x16">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="Portafolio, Juan David Builes,Html, Servicios">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    -->
+</head>
+<body>
+    <header>
+
+        <!--
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" width="60px" height="60px" alt="logotipo" title="Logotipo Portafolio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        -->
+        <a href="Index.html"><img id="logo" src="logo2.png" alt="Logotipo"></a>
+        <nav class="nav">
+            <ul>
+                <li><a class="nav-a" href="#inicio">Inicio</a></li>
+                <li><a class="nav-a" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="nav-a" href="#proyectos">Proyectos</a></li>
+                <li><a class="nav-a" href="#servicios">Servicios</a></li>
+                <li><a class="nav-a" href="#contacto">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <section id="inicio">
+        <img class="inicio-img" src="banner3.png" alt="banner">
+        <div class="inicio-div button-50 end-50">
+            <h1 class="inicio-h1">Mi Nombre</h1>
+            <p class="inicio-p">Desarrollador de Software</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            ¡Hola! Soy una persona apasionada por aprender, por ello una de las habilidades que me caracteriza como profesional es el compromiso; 
+            así como el trabajo en equipo y la buena comunicación. Debido al gran interés que tengo en el área, he logrado desarrollar un buen pensamiento crítico y gestión de proyectos, que me permitirá desarrollar de la mejor manera ...
+        </p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure in, tempora nam incidunt et asperiores quidem explicabo, quaerat, commodi omnis sint unde accusantium. Quod modi deserunt recusandae, ut nesciunt magni?
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque explicabo sequi excepturi impedit quam, omnis temporibus, officia nemo aperiam architecto dicta facere quibusdam fugiat esse placeat eaque ex. A, quod.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form method="post" name="formularioUnoDeContacto">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email">
+            <label for="servicio">Que servicio necesitas?</label>
+               <textarea name="servicio" id="servicio" cols="30" rows="10"></textarea>
+            <input type="submit" name="submit" value="Enviar" onclick="Email.send()" >
+         </form>
+    </section>
+
+    <footer>
+        <a href="https://wa.link/e8jgrk" target="_blank" rel="nofollow"><button>Contactarse Conmigo</button></a>
+        <p>&copy; Portafolio creado en el 2023.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
